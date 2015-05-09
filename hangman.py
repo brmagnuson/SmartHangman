@@ -1,5 +1,3 @@
-__author__ = 'BonnieRose'
-
 import random
 
 
