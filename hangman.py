@@ -3,7 +3,6 @@ import random
 
 # This program lets two players play the game Hangman.
 # Player 1 enters a secret word. Then, player 2 has seven wrong guesses before losing the game.
-# No modules may be imported.
 
 def getSecretWord():
     """Asks Player 1 for secret word, makes sure it is valid, and stores the word in lowercase."""
@@ -19,6 +18,7 @@ def getSecretWord():
     return secretWord
 
 def getRandomWord():
+    """Gets random word at least 6 characters long from list of common English words"""
     wordList = []
     with open('4000-most-common-english-words.csv') as file:
         for line in file:
@@ -110,6 +110,7 @@ guessedList = []
 # Player 1 enters secret word
 # ------------------------------------
 
+# Toggle to switch between 2 player and random word option.
 # secretWord = getSecretWord()
 secretWord = getRandomWord()
 
